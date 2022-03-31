@@ -1,0 +1,74 @@
+.h_menu4 {
+  text-align: center;
+}
+.h_menu4 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.h_menu4 a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+.memenuskyblue > li {
+  display: inline-block;
+  position: relative;
+}
+.memenuskyblue > li > a {
+  position: relative;
+  padding: 10px 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+.memenuskyblue > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  transition: .3s;
+}
+.memenuskyblue li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.h_nav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+}
+.memenuskyblue > li:hover .h_nav {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.h_nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: .3s linear;
+}
+.h_nav a:hover {background: #e8e8e8;}
+
